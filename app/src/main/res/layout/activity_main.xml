@@ -6,28 +6,36 @@
     android:layout_height="match_parent"
     tools:context="com.example.navadroid.androidonactivityresult.MainActivity">
 
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:id="@+id/textView" />
+        android:layout_width="236dp"
+        android:layout_height="50dp"
+        android:text="Enter text you wish to display next screen"
+        android:textAlignment="center"
+        android:id="@+id/textView"
+        tools:layout_editor_absoluteY="130dp"
+        tools:layout_editor_absoluteX="74dp" />
 
+    <EditText
+        android:id="@+id/editText_0"
+        android:layout_width="266dp"
+        android:layout_height="53dp"
+        tools:layout_editor_absoluteY="156dp"
+        tools:layout_editor_absoluteX="59dp" />
+    
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="8dp"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView" />
+        android:text="Sent"
+        tools:layout_editor_absoluteY="209dp"
+        tools:layout_editor_absoluteX="148dp" />
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
